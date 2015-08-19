@@ -1,7 +1,7 @@
 set -eu
 
 # OPAM packages you install
-OPAM_DEPS="ocamlfind core lwt ounit"
+OPAM_DEPS="ocamlfind core ounit"
 
 export PREFIX="./usr"
 export BINDIR="$PREFIX/bin"
@@ -28,5 +28,5 @@ if [ -n "${OPAM_DEPS:-}" ]; then
 fi
 
 # Build and test your programs
-ocaml example.ml -o example.out
+ocamlopt example.ml -o example.out
 ./example.out
