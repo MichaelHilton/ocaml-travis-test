@@ -1,7 +1,7 @@
 set -eu
 
 # OPAM packages you install
-OPAM_DEPS="ocamlfind core ounit"
+OPAM_DEPS="ocamlfind ounit"
 
 export PREFIX="./usr"
 export BINDIR="$PREFIX/bin"
