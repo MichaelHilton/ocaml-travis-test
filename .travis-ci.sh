@@ -26,3 +26,7 @@ eval `opam config env`
 if [ -n "${OPAM_DEPS:-}" ]; then
     opam install $OPAM_DEPS
 fi
+
+# Build and test your programs
+ocaml example.ml -o example.out
+./example.out
