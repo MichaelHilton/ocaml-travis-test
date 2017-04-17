@@ -1,8 +1,8 @@
 set -eu
 
 # OPAM packages you install
-OPAM_DEPS="ocamlfind ounit camomile reactiveData tyxml"
-
+OPAM_DEPS="ocamlfind ounit camomile reactiveData js_of_ocaml tyxml deriving ppx_deriving"
+#js_of_ocaml tyxml deriving ppx_deriving reactiveData ocp-indent camomile
 export PREFIX="./usr"
 export BINDIR="$PREFIX/bin"
 export LIBDIR="$PREFIX/lib"
