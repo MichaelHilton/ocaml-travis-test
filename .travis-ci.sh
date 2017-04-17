@@ -28,5 +28,7 @@ if [ -n "${OPAM_DEPS:-}" ]; then
 fi
 
 # Build and test your programs
-ocamlopt example.ml -o example.out
-./example.out
+#ocamlopt example.ml -o example.out
+#./example.out
+cd ./src
+./build.sh
